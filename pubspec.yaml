@@ -1,0 +1,48 @@
+name: fihirana
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=3.1.2 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  get: 4.6.6
+  flutter:
+    sdk: flutter
+  lottie: ^2.7.0
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/bible.jpg"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/logo_foreground.png"
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/model/
+    - assets/animation/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+    - family: Kalam
+      fonts:
+        - asset: assets/fonts/Kalam-Bold.ttf
+    - family: Abel
+      fonts:
+        - asset: assets/fonts/Abel-Regular.ttf
+    - family: AmaticSc
+      fonts:
+        - asset: assets/fonts/AmaticSc-Regular.ttf
+        - asset: assets/fonts/AmaticSc-Bold.ttf
+  uses-material-design: true
