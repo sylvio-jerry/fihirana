@@ -1,6 +1,5 @@
 import 'package:fihirana/app/utils/AppTheme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MusicWidget extends StatelessWidget {
   final String page;
@@ -35,10 +34,8 @@ class MusicWidget extends StatelessWidget {
             child: Text(
               'P. $page',
               // style: const TextStyle(color: Colors.white),
-              style: GoogleFonts.abel(
-                textStyle: const TextStyle(
-                    fontWeight: FontWeight.w300, color: Colors.white),
-              ),
+              style: const TextStyle(
+                  fontWeight: FontWeight.w300, color: Colors.white),
             ),
           ),
           const SizedBox(
@@ -52,11 +49,9 @@ class MusicWidget extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: Text(
                   title,
-                  style: GoogleFonts.abel(
-                    textStyle: const TextStyle(
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.normal,
-                    ),
+                  style: const TextStyle(
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.normal,
                   ),
                 ),
               ),
@@ -68,10 +63,8 @@ class MusicWidget extends StatelessWidget {
                 ),
                 child: Text(
                   keyy,
-                  style: GoogleFonts.abel(
-                    textStyle: const TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.white),
-                  ),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.white),
                 ),
               ),
             ],

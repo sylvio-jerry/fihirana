@@ -4,7 +4,6 @@ import 'package:fihirana/models/music_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -34,7 +33,6 @@ class HomeView extends GetView<HomeController> {
                     context: context,
                     builder: (context) {
                       return SizedBox(
-                        // height: 300,
                         width: Get.width,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -51,27 +49,23 @@ class HomeView extends GetView<HomeController> {
                               const SizedBox(
                                 height: 16,
                               ),
-                              Text(
+                              const Text(
                                 "Aide",
-                                style: GoogleFonts.kalam(
-                                  textStyle: const TextStyle(
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                      color: AppThemes.primary),
-                                ),
+                                style: TextStyle(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppThemes.primary),
                                 textAlign: TextAlign.center,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 25.0),
+                              const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 25.0),
                                 child: Text(
                                   "Vous pouvez rechercher par titre | par page | ou par clée",
-                                  style: GoogleFonts.abel(
-                                    textStyle: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.black54),
-                                  ),
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black54),
+                                  textAlign: TextAlign.center,
                                 ),
                               ),
                               SizedBox(
@@ -113,27 +107,23 @@ class HomeView extends GetView<HomeController> {
               ),
               Column(
                 children: [
-                  Text(
+                  const Text(
                     "Application Fihirana",
-                    style: GoogleFonts.abel(
-                      textStyle: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black,
-                      ),
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black,
                     ),
                   ),
                   Container(
                     margin: const EdgeInsets.symmetric(
                         horizontal: 20.0, vertical: 15),
-                    child: Text(
+                    child: const Text(
                       "Application pour les musiciens, où on peut voir la position des notes sur la portée musicale",
-                      style: GoogleFonts.abel(
-                        textStyle: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.black,
-                        ),
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
                       ),
                     ),
                   ),

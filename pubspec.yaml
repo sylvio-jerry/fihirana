@@ -7,7 +7,6 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
-  google_fonts: ^6.1.0
   get: 4.6.6
   flutter:
     sdk: flutter
@@ -31,18 +30,4 @@ flutter:
     - assets/images/
     - assets/model/
     - assets/animation/
-  fonts:
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/Poppins-Bold.ttf
-    - family: Kalam
-      fonts:
-        - asset: assets/fonts/Kalam-Bold.ttf
-    - family: Abel
-      fonts:
-        - asset: assets/fonts/Abel-Regular.ttf
-    - family: AmaticSc
-      fonts:
-        - asset: assets/fonts/AmaticSc-Regular.ttf
-        - asset: assets/fonts/AmaticSc-Bold.ttf
   uses-material-design: true
